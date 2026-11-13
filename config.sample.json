@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "listen": "[::1]:23002",
+  "upstream": "http://[fd53:7cb8:383:3::108]:30002",
+  "entries": [
+    {"name": "com.autonavi.amapauto", "apnType": "Business2Customer"}
+  ],
+  "pageSize": 100,
+  "maxRows": 4096,
+  "maxResponseBytes": 4194304,
+  "timeoutSeconds": 5,
+  "guardAccount": true,
+  "guardPollSeconds": 5,
+  "stateDirectory": "/data/lge/ivi-package-overlay/state",
+  "adminSocket": "/run/ivi-package-overlay/admin.sock",
+  "rsiService": "rsi-gateway.service",
+  "rsiProgram": "/lge/app_ro/rsi-gateway/rsi-gateway",
+  "originalFiles": [
+    "/lge/app_ro/rsi-gateway/rsi-gateway",
+    "/lge/app_ro/rsi-gateway/rsi_gateway.json",
+    "/lge/app_ro/account/account"
+  ]
+}
